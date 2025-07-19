@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 10px;
+
+}
+
+body {
+    background-color: rgb(32, 33, 36)
+}
+
+.content-div {
+    width: 300px;
+    height: 350px;
+    border: 1px solid rgb(84, 84, 84);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+
+
+
+
+
+.inputs-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.inputclass {
+    width: 500px;
+    height: 40px;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid rgb(84, 84, 84);
+    text-indent: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.input-wrapper {
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+}
+
+.inputclass {
+    padding-right: 60px;
+    height: 40px;
+    font-size: 16px;
+}
+
+#addtitle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border: none;
+    background: transparent;
+    color: white;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
+}
+
+.grid-div {
+    width: 80vw;
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    list-style: none;
+
+}
+
+.input1-title {
+    background: transparent;
+    border: none;
+    color: rgb(227, 214, 214);
+    font-size: 25px;
+    margin-bottom: 15px;
+
+}
+
+.input1-title:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+.input2-desc {
+    height: 250px;
+    background: transparent !important;
+    border: none !important;
+    font-family: sans-serif;
+    font-size: 15px;
+    overflow: auto;
+
+
+
+}
+
+.input2-desc:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+
+.input2-desc::-webkit-scrollbar {
+    display: none;
+}
+
+.save-btn {
+    height: 40px;
+    font-size: 25px;
+    width: 40px;
+}
+
+.delete-btn {
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    font-size: 25px;
+    width: 40px;
+
+}
+
+
+.btn-container {
+
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: 5px;
+    left: 200px;
+
+}
+
+@media (max-width: 600px) {
+    .inputs-div {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .content-div {
+        background-color: rgb(43, 42, 42);
+        border: 1px solid rgb(84, 84, 84);
+    }
+
+    .inputclass {
+        width: 80vw;
+        background-color: rgb(43, 42, 42);
+        border: 1px solid rgb(84, 84, 84);
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+        list-style: none;
+
+    }
+
+    .content-div {
+        width: 40vw;
+        height: 230px;
+        border: 1px solid grey;
+        border-radius: 8px;
+        padding: 10px;
+        margin-top: -15px;
+    }
+
+
+
+    .btn-container {
+
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        gap: 10px;
+        position: relative;
+        top: 10px;
+
+
+        left: 110px;
+    }
+
+
+    .save-btn {
+        height: 25px;
+        font-size: 15px;
+        width: 25px;
+    }
+
+    .delete-btn {
+        background: transparent;
+        color: white;
+        cursor: pointer;
+        height: 25px;
+        font-size: 10px;
+        width: 25px;
+    }
+
+    .delete-btn:focus {
+        border: none !important;
+        outline: none !important;
+    }
+
+    .save-btn:focus {
+        border: none !important;
+        outline: none !important;
+    }
+
+
+
+    .input2-desc {
+        height: 140px;
+    }
+
+    h1 {
+        text-align: center;
+        color: white;
+        font-size: 50px;
+        margin-top: 10px;
+        margin-bottom: -20px;
+
+    }
+}
